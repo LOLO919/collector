@@ -30,6 +30,8 @@ use MoonShine\UI\Components\{Breadcrumbs,
     Layout\TopBar,
     Layout\Wrapper,
     When};
+use App\MoonShine\Resources\DollResource;
+use MoonShine\MenuManager\MenuItem;
 
 final class MoonShineLayout extends CompactLayout
 {
@@ -44,6 +46,7 @@ final class MoonShineLayout extends CompactLayout
     {
         return [
             ...parent::menu(),
+            MenuItem::make('Dolls', DollResource::class),
         ];
     }
 
