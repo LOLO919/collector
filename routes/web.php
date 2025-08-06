@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DollController;
+use App\Http\Controllers\StaticPageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/dolls/{doll}', [DollController::class, 'show']);
+Route::get('/pages/{staticPage}', [StaticPageController::class, 'show']);

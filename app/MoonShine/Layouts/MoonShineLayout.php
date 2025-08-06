@@ -32,6 +32,7 @@ use MoonShine\UI\Components\{Breadcrumbs,
     When};
 use App\MoonShine\Resources\DollResource;
 use MoonShine\MenuManager\MenuItem;
+use App\MoonShine\Resources\StaticPageResource;
 
 final class MoonShineLayout extends CompactLayout
 {
@@ -47,6 +48,7 @@ final class MoonShineLayout extends CompactLayout
         return [
             ...parent::menu(),
             MenuItem::make('Dolls', DollResource::class),
+            MenuItem::make('StaticPages', StaticPageResource::class),
         ];
     }
 

@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\MoonShine\Resources;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Doll;
+use App\Models\StaticPage;
 
 use MoonShine\Laravel\Resources\ModelResource;
 use MoonShine\UI\Components\Layout\Box;
@@ -18,30 +18,24 @@ use MoonShine\UI\Fields\Text;
 use MoonShine\UI\Fields\Textarea;
 
 /**
- * @extends ModelResource<Doll>
+ * @extends ModelResource<StaticPage>
  */
-class DollResource extends ModelResource
+class StaticPageResource extends ModelResource
 {
-    protected string $model = Doll::class;
+    protected string $model = StaticPage::class;
 
-    protected string $title = 'Dolls';
+    protected string $title = 'StaticPages';
 
-    /**
-     * Поля общие для всех
-     *
-     * @return iterable
-     */
     protected function baseFields(): iterable
     {
         return [
             ID::make()->sortable(),
-            Text::make('Имя', 'name'),
-            Text::make('Год выпуска', 'year_of_issue'),
-            Text::make('Тираж', 'edition'),
-            Select::make('Наличие', 'enabled')
+            Text::make('Заголовок', 'title'),
+            Text::make('Строка страницы в браузере', 'slug'),
+            Select::make('Отображение', 'enabled')
                 ->options([
-                    1 => 'В наличии',
-                    0 => 'Отсутствует',
+                    1 => 'Показать',
+                    0 => 'Скрыть',
                 ]),
         ];
     }
@@ -70,13 +64,12 @@ class DollResource extends ModelResource
     protected function detailFields(): iterable
     {
         return array_merge((array) $this->baseFields(), [
-            Image::make('Фото', 'photo'),
             Textarea::make('Описание', 'description'),
         ]);
     }
 
     /**
-     * @param Doll $item
+     * @param StaticPage $item
      *
      * @return array<string, string[]|string>
      * @see https://laravel.com/docs/validation#available-validation-rules
