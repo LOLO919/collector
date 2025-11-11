@@ -8,10 +8,10 @@
     </div>
     <div class="row">
 
-       @foreach($dolls as $doll)
+        @foreach($dolls as $doll)
 
-           @include('common.doll_item', ['doll'=>$doll])
+            @include('welcome.doll_item', ['doll'=>$doll])
 
-       @endforeach
+        @endforeach
     </div>
 </div>

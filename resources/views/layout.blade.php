@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Unearth &mdash; Website Template by Colorlib</title>
+    <title>Коллекционирование &mdash; Website Template by Colorlib</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -45,9 +45,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <a href="#" class="text-white"><span class="mr-2 text-white icon-envelope-open-o"></span> <span class="d-none d-md-inline-block">info@yourdomain.com</span></a>
+                    <a href="#" class="text-white"><span class="mr-2 text-white icon-envelope-open-o"></span> <span class="d-none d-md-inline-block">poppyparkercollector@gmail.com</span></a>
                     <span class="mx-md-2 d-inline-block"></span>
-                    <a href="#" class="text-white"><span class="mr-2 text-white icon-phone"></span> <span class="d-none d-md-inline-block">1+ (234) 5678 9101</span></a>
+                    <a href="#" class="text-white"><span class="mr-2 text-white icon-phone"></span> <span class="d-none d-md-inline-block">+7900100000</span></a>
 
 
                     <div class="float-right">
@@ -72,7 +72,7 @@
 
 
                 <div class="site-logo">
-                    <a href="index.html" class="text-black"><span class="text-primary">Unearth</a>
+                    <a href="index.html" class="text-black"><span class="text-primary">Мой сайт</a>
                 </div>
 
                 <div class="col-12">
@@ -80,31 +80,31 @@
 
                         <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
                             <li><a href="#home-section" class="nav-link">Home</a></li>
-                            <li><a href="#services-section" class="nav-link">Services</a></li>
+{{--                            <li><a href="#services-section" class="nav-link">Services</a></li>--}}
 
 
-                            <li class="has-children">
-                                <a href="#about-section" class="nav-link">About Us</a>
-                                <ul class="dropdown arrow-top">
-                                    <li><a href="#team-section" class="nav-link">Team</a></li>
-                                    <li><a href="#pricing-section" class="nav-link">Pricing</a></li>
-                                    <li><a href="#faq-section" class="nav-link">FAQ</a></li>
-                                    <li class="has-children">
-                                        <a href="#">More Links</a>
-                                        <ul class="dropdown">
-                                            <li><a href="#">Menu One</a></li>
-                                            <li><a href="#">Menu Two</a></li>
-                                            <li><a href="#">Menu Three</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
+{{--                            <li class="has-children">--}}
+{{--                                <a href="#about-section" class="nav-link">About Us</a>--}}
+{{--                                <ul class="dropdown arrow-top">--}}
+{{--                                    <li><a href="#team-section" class="nav-link">Team</a></li>--}}
+{{--                                    <li><a href="#pricing-section" class="nav-link">Pricing</a></li>--}}
+{{--                                    <li><a href="#faq-section" class="nav-link">FAQ</a></li>--}}
+{{--                                    <li class="has-children">--}}
+{{--                                        <a href="#">More Links</a>--}}
+{{--                                        <ul class="dropdown">--}}
+{{--                                            <li><a href="#">Menu One</a></li>--}}
+{{--                                            <li><a href="#">Menu Two</a></li>--}}
+{{--                                            <li><a href="#">Menu Three</a></li>--}}
+{{--                                        </ul>--}}
+{{--                                    </li>--}}
+{{--                                </ul>--}}
+{{--                            </li>--}}
 
-                            <li><a href="#press-section" class="nav-link">Press</a></li>
+{{--                            <li><a href="#press-section" class="nav-link">Press</a></li>--}}
 
-                            <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>
-                            <li><a href="#blog-section" class="nav-link">Blog</a></li>
-                            <li><a href="#contact-section" class="nav-link">Contact</a></li>
+{{--                            <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>--}}
+{{--                            <li><a href="#blog-section" class="nav-link">Blog</a></li>--}}
+{{--                            <li><a href="#contact-section" class="nav-link">Contact</a></li>--}}
                         </ul>
                     </nav>
 
