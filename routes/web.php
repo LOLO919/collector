@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/', [WelcomeController::class, 'index']);
+Route::get('/', [WelcomeController::class, 'index'])->name('welcome');
 Route::get('/dolls/{doll}', [DollController::class, 'show'])->name('dolls.show');
 Route::get('/pages/{staticPage}', [StaticPageController::class, 'show']);
 

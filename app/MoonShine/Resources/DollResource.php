@@ -7,6 +7,7 @@ namespace App\MoonShine\Resources;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Doll;
 
+use MoonShine\CKEditor\Fields\CKEditor;
 use MoonShine\Laravel\Resources\ModelResource;
 use MoonShine\UI\Components\Layout\Box;
 use MoonShine\UI\Fields\ID;
@@ -71,7 +72,7 @@ class DollResource extends ModelResource
     {
         return array_merge((array) $this->baseFields(), [
             Image::make('Фото', 'photo'),
-            Textarea::make('Описание', 'description'),
+            CKEditor::make('Описание', 'description'),
         ]);
     }
 
